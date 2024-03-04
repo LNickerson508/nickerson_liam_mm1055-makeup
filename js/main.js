@@ -2,13 +2,13 @@
 
 // Step 1 - Variables
 // how can i grab all the buttons for show/hiding content in my HTML?
-let buttons = document.querySelectorAll('button'); 
+let buttons = document.querySelectorAll('.btn'); 
 
 // Step 2 - Methods
 function toggleQuestion(e) {
     const questionEl = e.currentTarget.parentElement.parentElement;
     console.log(questionEl);
-    questionEl.classList.toggle('article.active');
+    questionEl.classList.toggle('active');
 
     // How do i TOGGLE a class name on my questionEl element? in order to turn on/off the class "active"?
     // this should be ONE LINE of code
